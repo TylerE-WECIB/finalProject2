@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cypher Encoder and Decoder</title>
+    ,<script defer src="cipher.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">Caesar Cyper</h1>
+    <form id="secret_code">
+        <div style="text-align: center;">
+        <textarea id="user_input" placeholder="Enter your code here: " rows="20" cols="120" style="resize: none;"></textarea>
+        </div><br><br>
+        <div style="text-align: center;">
+        <label for="data_mode">Encrypt/Decrypt</label>
+        <select id="data_mode" name="data_mode">
+            <option value="encrypt">Encrypt</option>
+            <option value="decrypt">Decrypt</option>
+        </select>
+        <label for="shift_dir">Shift Direction</label>
+        <select id="shift_dir" name="shift_dir">
+            <option value="right">Right</option>
+            <option value="left">Left</option>
+        </select>
+        <label for="shift_index">Shift Index</label>
+        <input type="number" min="0" value="0" id="shift_index" name="shift_index">
+        <br><br><button id="submit_button" type="button">Encrypt</button>
+        </div>
+        
+    </form><hr>
+    <h1 style="text-align: center;">Output</h1>
+
+    <div style="text-align: center;">
+    <textarea id="output" rows="20" cols="120" style="resize: none;"></textarea>
+    </div>
+</body>
+</html>
